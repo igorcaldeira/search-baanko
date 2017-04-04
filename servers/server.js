@@ -47,23 +47,6 @@ app.route('/').get(function(req, res){
 	res.sendFile(__dirname + './../front/src/index.html');
 });
 
-// if(url.port != 443) {
-
-	// http server below
-	app.listen(url.port, function(){
-		console.log('listening on *:'+url.port);
-	});
-
-// } else {
-
-// 	// https server below
-// 	https.createServer({
-// 		key: privateKey,
-// 		cert: certificate
-// 	}, app).listen(443, function(){
-// 		console.log('listening on *:443');
-// 	});
-// }
-
-
-
+app.listen(process.env.PORT || 5000, function(){
+	console.log('listening on *:'+url.port);
+});
