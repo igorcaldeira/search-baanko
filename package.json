@@ -1,9 +1,10 @@
 {
-  "name": "Voe-Legal-Backend",
-  "version": "1.0.0",
+  "name": "searchbaanko",
+  "version": "1.0.1",
   "description": "Voe Legal Backend Server",
   "scripts": {
-    "test": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha"
+    "test": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha",
+    "start": "node servers/server.js"
   },
   "author": "SRM IT",
   "license": "ISC",
@@ -20,5 +21,22 @@
     "mssql": "^3.3.0",
     "qs": "^6.2.1",
     "request": "2.74.0"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorcaldeira/search-baanko.git"
+  },
+  "keywords": [
+    "baanko",
+    "challenge"
+  ],
+  "bugs": {
+    "url": "https://github.com/igorcaldeira/search-baanko/issues"
+  },
+  "homepage": "https://github.com/igorcaldeira/search-baanko#readme"
 }
