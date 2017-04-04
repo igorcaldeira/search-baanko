@@ -2357,7 +2357,7 @@ html .row-fit-40 [class*="col-"] {
 body {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  opacity: 0;
+  opacity: 1;
 }
 body.dom-ready {
   opacity: 1;
